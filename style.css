@@ -1,0 +1,106 @@
+.imagens-slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.imagens-slider .slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  transition: 0.5s ease-out;
+}
+
+.imagens-slider .slide.mostrar {
+  opacity: 1;
+}
+
+.imagens-slider .slide.slide-rosa {
+  background-image: url(./images/flores-rosas.png);
+}
+
+.imagens-slider .slide.slide-verde {
+  background-image: url(./images/flores-verde.png.png);
+}
+
+.imagens-slider .slide.slide-laranja {
+  background-image: url(./images/montanha.png);
+}
+
+.imagens-slider .slide.slide-azul {
+  background-image: url(./images/lago.png);
+}
+
+.seta-avancar,
+.seta-voltar {
+  z-index: 1;
+  position: absolute;
+}
+
+.seta-voltar {
+  transform: rotateY(180deg);
+  left: 4%;
+}
+
+.seta-avancar {
+  right: 4%;
+}
+
+.seta-voltar .imagem-seta,
+.seta-avancar .imagem-seta {
+  width: 50px;
+  height: 50px;
+}
+
+.opacidade {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.conteudo {
+  width: 620px;
+  border-radius: 10px;
+  margin-left: 180px;
+  padding: 65px 60px;
+  background-color: white;
+}
+
+.conteudo .titulo {
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 80px;
+}
+
+.conteudo .texto {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.conteudo .botao {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.conteudo .botao.rosa{
+  color:#C50000
+}
+
+.conteudo .botao.verde{
+  color:#D9DD10
+}
+
+.conteudo .botao.laranja{
+  color:#A63A17
+}
+
+.conteudo .botao.azul{
+  color:#10ACDD
+}
